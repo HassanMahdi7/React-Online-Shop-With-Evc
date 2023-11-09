@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');body{
+    font-family: 'Share Tech Mono', monospace;;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo{
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(0, 199, 50);
+}
+.links a{
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+}
+.cart{
+    width: 30px;    
+    height: 30px;
+    background-color: rgb(1, 134, 134);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    border-radius: 10px;
+
+}
+.card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    width: 100%;    
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center ;
+    color: aliceblue;
+    background-color: rgba(1,1,31,0.405);
+    padding: 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+.card span{
+    font-size: 1.75rem;
+    margin: 10px;
+}
+.btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 50%;
+    right:10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.btn-primary{
+    background-color: rgb(0, 112, 112);
+}
+.btn-danger{
+    background-color: rgb(255, 0, 0);
+}
+.cart-container{
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(1, 126, 119);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    grid-gap: 10px;
+    padding: 20px;
+    place-items: center;
+}
+.cart-products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    border-right: 1px inset #ccc;
+}
+.cart-product{
+    padding: 10px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border-top: 1px solid #ccc ;
+    place-content: center;
+}
+.cart-product img{
+    width: 50px;
+    height: 50px;
+    /* border:  3px solid #757474; */
+    border-radius: 30%;
+}
+.cart-product span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.title-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.title-img *{
+    padding: 0px 10px;
+}
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.payment-card{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 0;
+    margin: 10px ;
+    cursor: pointer;
+    text-align: center;
+    /* width: 100%; */
+}
+.payment-card:hover,.payment-card.selected{
+    background-color: rgba(24, 118, 201, 0.159);
+    border-color: #009189;
+}
+.form-control{
+   width: 82%;
+   padding: 20px;
+   font-size: 20px;
+   border: 1px solid #ccc;
+   border-radius: 15px;
+   margin: 0 12px; 
+}
+.btnpay{
+    width: 95%;
+    margin: 10px 12px;
+    padding: 20px;
+    background-color: #009189;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
